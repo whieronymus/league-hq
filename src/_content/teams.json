@@ -1,0 +1,314 @@
+[
+  {
+    "team_id": "team1",
+    "current_slug": "big-brain-blitz",
+    "name": "Big Brain Blitz",
+    "tagline": "Math meets mayhem",
+    "claims": ["Past Champion"],
+    "manager": {
+      "name": "Will Hieronymus",
+      "username": "whieronymus",
+      "user_id": "1260278677124435968",
+      "vibe": "Calculated and strategic, he sees the game as a puzzle to be solved — every play, every matchup, every season is part of the master plan."
+    },
+    "favorite_team": "San Francisco 49ers",
+    "least_favorite_team": "Seattle Seahawks",
+    "logo": {
+      "url": "https://imgur.com/a/QVNvSuT.png",
+      "alt": "A futuristic 49ers player under a glowing brain with neon play diagrams swirling in the sky."
+    },
+    "slug_history": ["big-brain-blitz"],
+    "logo_history": [
+      {
+        "alt": "A futuristic 49ers player under a glowing brain with neon play diagrams swirling in the sky.",
+        "url": "https://imgur.com/a/QVNvSuT.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team2",
+    "current_slug": "i-pooped-out-of-my-butker",
+    "name": "I Pooped out of my Butker",
+    "tagline": "The throne is mine, and I’m not giving it up.",
+    "claims": ["Past Champion"],
+    "manager": {
+      "name": "Jacob Gresham",
+      "username": "captainFantasy",
+      "user_id": "334607207918239744",
+      "vibe": "Irreverent and shameless, he thrives on stirring the pot while sitting comfortably on his throne of chaos and trophies."
+    },
+    "favorite_team": "Kansas City Chiefs",
+    "least_favorite_team": "Las Vegas Raiders",
+    "logo": {
+      "url": "https://sleepercdn.com/uploads/77a0426e785e27564fbe531a7af7ba81.jpg",
+      "alt": "A cartoonish crowned Chiefs player sitting proudly on a golden toilet."
+    },
+    "slug_history": ["i-pooped-out-of-my-butker"],
+    "logo_history": [
+      {
+        "alt": "A cartoonish crowned Chiefs player sitting proudly on a golden toilet.",
+        "url": "https://sleepercdn.com/uploads/77a0426e785e27564fbe531a7af7ba81.jpg"
+      }
+    ]
+  },
+  {
+    "team_id": "team3",
+    "current_slug": "raise-the-jolly-rodger",
+    "name": "Raise The Jolly Rodger",
+    "tagline": "Cutthroat on Sundays, merciless every other day.",
+    "claims": ["Rookie Manager"],
+    "manager": {
+      "name": "Mike Clayton",
+      "username": "Mclayton1983",
+      "user_id": "605875240370794496",
+      "vibe": "A swaggering pirate on the fantasy seas, fearless in raids and unbothered by storms, always looking to plunder points from rivals."
+    },
+    "favorite_team": "Pittsburgh Steelers",
+    "least_favorite_team": "Dallas Cowboys",
+    "logo": {
+      "url": "https://imgur.com/a/440de3be.png",
+      "alt": "A pirate-inspired skull-and-crossed-swords design with a mustachioed face replacing the skull."
+    },
+    "slug_history": ["raise-the-jolly-rodger"],
+    "logo_history": [
+      {
+        "alt": "A pirate-inspired skull-and-crossed-swords design with a mustachioed face replacing the skull.",
+        "url": "https://imgur.com/a/440de3be.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team4",
+    "current_slug": "renfrow-it-shall-be",
+    "name": "Renfrow It Shall Be",
+    "tagline": "Hangin', Bangin' an Clangin'",
+    "claims": ["Past Champion"],
+    "manager": {
+      "name": "Ross Grier",
+      "username": "rwg2021",
+      "user_id": "1265862692002856960",
+      "vibe": "The wild card prophet — unpredictable, lightning-charged, and just unhinged enough to pull off the impossible."
+    },
+    "favorite_team": "Carolina Panthers",
+    "least_favorite_team": "Kansas City Chiefs",
+    "logo": {
+      "url": "https://i.imgur.com/0CYflaF.png",
+      "alt": "A Panthers player stands atop a glowing mushroom under stormy skies, lightning crackling all around."
+    },
+    "slug_history": ["renfrow-it-shall-be"],
+    "logo_history": [
+      {
+        "alt": "A Panthers player stands atop a glowing mushroom under stormy skies, lightning crackling all around.",
+        "url": "https://i.imgur.com/0CYflaF.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team5",
+    "current_slug": "the-champ",
+    "name": "The Champ",
+    "tagline": "Glory shines brightest under the rainbow.",
+    "claims": ["Two-time Champion", "First back-to-back winner"],
+    "manager": {
+      "name": "Lindol French",
+      "username": "lindol",
+      "user_id": "1261458955217944576",
+      "vibe": "Joyful but ruthless, he basks in glory with a trophy in one hand and his rivals' broken dreams in the other."
+    },
+    "favorite_team": "San Francisco 49ers",
+    "least_favorite_team": "Seattle Seahawks",
+    "logo": {
+      "url": "https://imgur.com/a/3uoba1F.png",
+      "alt": "A triumphant 49ers player kneels on the field, raising a Lombardi trophy under a radiant rainbow arch."
+    },
+    "slug_history": ["the-champ"],
+    "logo_history": [
+      {
+        "alt": "A triumphant 49ers player kneels on the field, raising a Lombardi trophy under a radiant rainbow arch.",
+        "url": "https://imgur.com/a/3uoba1F.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team6",
+    "current_slug": "micahs-agent",
+    "name": "Micah’s Agent",
+    "tagline": "Always be closing",
+    "claims": [],
+    "manager": {
+      "name": "Blake Walmsley",
+      "username": "bwalmsley",
+      "user_id": "1260605002259378176",
+      "vibe": "The slick dealmaker — all contracts, confidence, and cold cash; victory is always just another negotiation away."
+    },
+    "favorite_team": "Dallas Cowboys",
+    "least_favorite_team": "Philadelphia Eagles",
+    "logo": {
+      "url": "https://imgur.com/a/Oz9JDie.png",
+      "alt": "A smiling agent in a sharp suit leans back at his desk, stacks of money surrounding him, with Cowboys memorabilia in the background."
+    },
+    "slug_history": ["micahs-agent"],
+    "logo_history": [
+      {
+        "alt": "A smiling agent in a sharp suit leans back at his desk, stacks of money surrounding him, with Cowboys memorabilia in the background.",
+        "url": "https://imgur.com/a/Oz9JDie.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team7",
+    "current_slug": "december",
+    "name": "December",
+    "tagline": "When the frost bites, the bear strikes.",
+    "claims": ["Rookie Manager"],
+    "manager": {
+      "name": "Donavan Harter",
+      "username": "december5",
+      "user_id": "871149207258562560",
+      "vibe": "Chaotic and untamed, a storm in the form of a polar bear; thrives when the cold sets in and the pressure is highest."
+    },
+    "favorite_team": "San Francisco 49ers",
+    "least_favorite_team": "Seattle Seahawks",
+    "logo": {
+      "url": "https://imgur.com/a/5VPGsub.png",
+      "alt": "A fierce polar bear in 49ers gear, with a jerry curl mane, stands over the helmets of defeated opponents."
+    },
+    "slug_history": ["december"],
+    "logo_history": [
+      {
+        "alt": "A fierce polar bear in 49ers gear, with a jerry curl mane, stands over the helmets of defeated opponents.",
+        "url": "https://imgur.com/a/5VPGsub.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team8",
+    "current_slug": "the-bastard",
+    "name": "The Bastard",
+    "tagline": "King of da Norf",
+    "claims": ["Rookie Manager"],
+    "manager": {
+      "name": "Brandon Jones",
+      "username": "TheBastard911",
+      "user_id": "1261547252527136768",
+      "vibe": "A grim northern warlord, armored in red and gold, forever marching through the snow toward conquest."
+    },
+    "favorite_team": "San Francisco 49ers",
+    "least_favorite_team": "Seattle Seahawks",
+    "logo": {
+      "url": "https://imgur.com/a/48ZMvrK.png",
+      "alt": "A 49ers warrior in furs and armor stands in the snow, football and shield in hand, with the text 'King of da Norf.'"
+    },
+    "slug_history": ["the-bastard"],
+    "logo_history": [
+      {
+        "alt": "A 49ers warrior in furs and armor stands in the snow, football and shield in hand, with the text 'King of da Norf.'",
+        "url": "https://imgur.com/a/48ZMvrK.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team9",
+    "current_slug": "spiders",
+    "name": "Spiders",
+    "tagline": "If you're not first, you're last",
+    "claims": ["Rookie Manager"],
+    "manager": {
+      "name": "Matthew Spivey",
+      "username": "spiders2",
+      "user_id": "1261549610975887360",
+      "vibe": "Fast, aggressive, and venomous — once he’s in motion, you’re already caught in the web."
+    },
+    "favorite_team": "Baltimore Ravens",
+    "least_favorite_team": "Pittsburgh Steelers",
+    "logo": {
+      "url": "https://imgur.com/a/LI3FcLh.png",
+      "alt": "A mechanical spider with a Ravens-themed body, built from a football, races down a road toward the end zone."
+    },
+    "slug_history": ["spiders"],
+    "logo_history": [
+      {
+        "alt": "A mechanical spider with a Ravens-themed body, built from a football, races down a road toward the end zone.",
+        "url": "https://imgur.com/a/LI3FcLh.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team10",
+    "current_slug": "ajs-endzone-express",
+    "name": "A.J.’s Endzone Express",
+    "tagline": "Loyal to the flock, lethal on the field.",
+    "claims": ["Rookie Manager"],
+    "manager": {
+      "name": "Vince Giancarlo",
+      "username": "elHeffeVG",
+      "user_id": "1261422699104714752",
+      "vibe": "Disciplined and loyal, but always circling like a predator — swooping down on mistakes with ruthless precision."
+    },
+    "favorite_team": "Philadelphia Eagles",
+    "least_favorite_team": "Dallas Cowboys",
+    "logo": {
+      "url": "https://imgur.com/a/eJV7t2l.png",
+      "alt": "An eagle in a fedora clutches a football, wings spread wide, exuding menace and loyalty."
+    },
+    "slug_history": ["ajs-endzone-express"],
+    "logo_history": [
+      {
+        "alt": "An eagle in a fedora clutches a football, wings spread wide, exuding menace and loyalty.",
+        "url": "https://imgur.com/a/eJV7t2l.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team11",
+    "current_slug": "the-real-bangbus",
+    "name": "@TheRealBangBus",
+    "tagline": "Two bulldogs, one mission: break the leash.",
+    "claims": ["Rookie Manager"],
+    "manager": {
+      "name": "Nick Banegas",
+      "username": "Bandego",
+      "user_id": "1261426912731865089",
+      "vibe": "Chaotic fun embodied, his sideline Frenchies call the plays with grit and humor; equal parts bite and bark."
+    },
+    "favorite_team": "San Francisco 49ers",
+    "least_favorite_team": "Seattle Seahawks",
+    "logo": {
+      "url": "https://imgur.com/a/jjtEUtL.png",
+      "alt": "Two brindle French bulldogs dressed as 49ers coaches with headsets and clipboards, standing on the sideline."
+    },
+    "slug_history": ["the-real-bangbus"],
+    "logo_history": [
+      {
+        "alt": "Two brindle French bulldogs dressed as 49ers coaches with headsets and clipboards, standing on the sideline.",
+        "url": "https://imgur.com/a/jjtEUtL.png"
+      }
+    ]
+  },
+  {
+    "team_id": "team12",
+    "current_slug": "the-inaugural-champ",
+    "name": "The Inaugural Champ",
+    "tagline": "The original gold standard.",
+    "claims": ["Past Champion", "First Champion"],
+    "manager": {
+      "name": "William Montgomery",
+      "username": "FirstChamp79",
+      "user_id": "1261473824851898368",
+      "vibe": "Steady and confident, the original gold standard; carries himself with the calm assurance of a man who knows he’s already proven everything."
+    },
+    "favorite_team": "Dallas Cowboys",
+    "least_favorite_team": "San Francisco 49ers",
+    "logo": {
+      "url": "https://imgur.com/a/dvn8qnI.png",
+      "alt": "A portrait-style image of Michael Irvin holding a championship belt, dressed in Cowboys gear."
+    },
+    "slug_history": ["the-inaugural-champ"],
+    "logo_history": [
+      {
+        "alt": "A portrait-style image of Michael Irvin holding a championship belt, dressed in Cowboys gear.",
+        "url": "https://imgur.com/a/dvn8qnI.png"
+      }
+    ]
+  }
+]

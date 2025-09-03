@@ -1,0 +1,48 @@
+---
+layout: layouts/page.njk
+permalink: "/rules/"
+title: "League Rules"
+---
+
+{% from "components/ui.njk" import card, badge %}
+
+<div class="gridlines"></div>
+
+<header class="mb-6">
+  <h1>League Rules</h1>
+  {% if rules.all.source_snapshot %}
+    <p class="text-sm opacity-80">
+      Snapshot {{ rules.all.source_snapshot }} from {{ rules.all.source }}
+    </p>
+  {% endif %}
+</header>
+
+<!-- TOC as its own block, above content -->
+<section class="mb-6">
+  {% call card(null) %}
+    <div class="toc-title mb-2">Contents</div>
+    <ol class="toc-list grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+      {% for s in rules.toc %}
+        <li><a href="#{{ s.id }}">{{ s.title }}</a></li>
+      {% endfor %}
+    </ol>
+  {% endcall %}
+</section>
+
+<!-- Rule sections -->
+<section class="space-y-6">
+  {% for sec in rules.all.sections %}
+    <article id="{{ sec.id }}" class="scroll-mt-24">
+      {% call card(sec.title) %}
+        <ul class="space-y-2 list-disc pl-6">
+          {% for item in sec.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endcall %}
+      <p class="mt-3 text-sm">
+        <a class="underline hover:no-underline" href="#top">Back to top</a>
+      </p>
+    </article>
+  {% endfor %}
+</section>

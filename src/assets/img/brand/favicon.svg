@@ -1,0 +1,5 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#020410"/>
+  <text x="6" y="24" font-family="monospace" font-size="18" fill="#3DA3CC" font-weight="bold">BC</text>
+  <path d="M8 16 C8 10 24 10 24 16 C24 22 8 22 8 16" fill="none" stroke="#E6A33D" stroke-width="2"/> <!-- simplified football shape -->
+</svg>

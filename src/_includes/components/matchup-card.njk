@@ -1,0 +1,22 @@
+{# Props: m (matchup), teams (data object) #}
+{% set home = teams.byId[m.home_team_id] %}
+{% set away = teams.byId[m.away_team_id] %}
+
+<article class="bg-bg rounded-xl border border-slate-700 p-4 flex items-center gap-4">
+  <img src="{{ '/assets/img/teams/' | url }}{{ away.team_id }}/logo.png" alt="{{ away.logo.alt or (away.name + ' logo') }}" class="w-10 h-10 rounded-lg object-cover">
+  <div class="text-right flex-1">
+    <div class="text-sm text-slate-300">Away</div>
+    <div class="font-medium">{{ away.name }}</div>
+  </div>
+
+  <div class="text-center px-3">
+    <div class="text-xs text-slate-400">{{ m.headline }}</div>
+    <div class="text-[10px] text-slate-500">{{ m.blurb }}</div>
+  </div>
+
+  <div class="flex-1">
+    <div class="text-sm text-slate-300">Home</div>
+    <div class="font-medium">{{ home.name }}</div>
+  </div>
+  <img src="{{ '/assets/img/teams/' | url }}{{ home.team_id }}/logo.png" alt="{{ home.logo.alt or (home.name + ' logo') }}" class="w-10 h-10 rounded-lg object-cover">
+</article>

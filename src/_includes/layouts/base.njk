@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or site.meta.name }}</title>
+  <meta name="application-name" content="{{ site.meta.short_name }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/arcade.css' | url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "components/_header.njk" %}
+
+  {{ content | safe }}
+
+  {% include "components/_footer.njk" %}
+  <script src="{{ '/assets/js/site.js' | url }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: matchups.weeks
+  size: 1
+  alias: wk
+permalink: "/matchups/{{ wk.season }}/week-{{ wk.week }}/"
+eleventyComputed:
+  title: "Matchups — Week {{ wk.week }}, {{ wk.season }}"
+---
+<section class="p-6 bg-surface rounded-xl border border-slate-700">
+  <header class="mb-4">
+    <h1 class="text-2xl font-semibold">Week {{ wk.week }}, {{ wk.season }}</h1>
+    {% if wk.date %}<p class="text-slate-300 text-sm">{{ wk.date }}</p>{% endif %}
+  </header>
+
+  <div class="space-y-3">
+    {% for m in wk.matchups %}
+      {% include "components/matchup-card.njk" %}
+    {% endfor %}
+  </div>
+
+  <p class="mt-6">
+    <a class="underline" href="{{ '/matchups/' | url }}">All weeks</a>
+  </p>
+</section>

@@ -1,0 +1,77 @@
+{
+  "source": "sleeper",
+  "source_snapshot": "2025-09-03",
+  "season": "2025",
+  "sections": [
+    {
+      "id": "league",
+      "title": "League Info",
+      "items": [
+        "Name: BBC: Return of the Chronic",
+        "Season: 2025",
+        "Teams: 12",
+        "Status: in_season"
+      ]
+    },
+    {
+      "id": "rosters",
+      "title": "Rosters & Lineups",
+      "items": [
+        "Positions: QB · RB · RB · WR · WR · TE · FLEX · K · DEF · BN · BN · BN · BN · BN · BN",
+        "Bench slots: 6",
+        "Max substitutions per week: 2"
+      ]
+    },
+    {
+      "id": "scoring",
+      "title": "Scoring Settings",
+      "items": [
+        "Passing: 4 per pass TD, 0.04 per pass yard, -1 per INT, +2 for 2PT",
+        "Rushing: 6 per rush TD, 0.1 per rush yard, +2 for 2PT",
+        "Receiving: 6 per rec TD, 0.1 per rec yard, PPR = 1",
+        "Turnovers: Fumble lost -2",
+        "Kicking: XP 1, XP miss -1, FG 0–19:3, 20–29:3, 30–39:3, 40–49:4, 50–59:5, 60+:6, FG miss -1",
+        "Defense/ST: Sack 1, INT 2, FF 1, FR 2, TD 6, ST/DEF TD 6, Safety 2",
+        "Points allowed: 0=10, 1–6=7, 7–13=4, 14–20=1, 21–27=0, 28–34=-1, 35+=-4"
+      ]
+    },
+    {
+      "id": "waivers",
+      "title": "Waivers & FAAB",
+      "items": [
+        "Type: FAAB",
+        "Budget: $100 (min bid $0)",
+        "Daily waivers: on; processing hour: 8:00",
+        "Clear time (days): 1"
+      ]
+    },
+    {
+      "id": "trades",
+      "title": "Trades & Veto",
+      "items": [
+        "Trades allowed: yes",
+        "Veto votes needed: 5",
+        "Veto vote visibility: shown",
+        "Trade review window (days): 2",
+        "Trade deadline: week 11"
+      ]
+    },
+    {
+      "id": "playoffs",
+      "title": "Playoffs",
+      "items": [
+        "Teams: 6",
+        "Start week: 15"
+      ]
+    },
+    {
+      "id": "policies",
+      "title": "Policies & Misc",
+      "items": [
+        "Pick trading: enabled",
+        "Keepers max: 1",
+        "Draft rounds: 3"
+      ]
+    }
+  ]
+}

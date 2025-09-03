@@ -1,0 +1,21 @@
+<header class="hdr">
+  <div class="hdr__inner">
+    <a href="{{ '/' | url }}" class="hdr__brand" aria-label="{{ site.meta.name }}">
+      {{ site.branding.wordmark_text }}
+    </a>
+
+    <nav class="hdr__nav" aria-label="Primary">
+      {% for item in site.nav %}
+        <a href="{{ item.href | url }}"
+           class="hdr__link"
+           {% if page.url == item.href %}aria-current="page"{% endif %}>
+          {{ item.label | upper }}
+        </a>
+      {% endfor %}
+    </nav>
+
+    <div class="hdr__right">
+      {% if site.meta.season %}<span class="hdr__badge">SEASON {{ site.meta.season }}</span>{% endif %}
+    </div>
+  </div>
+</header>

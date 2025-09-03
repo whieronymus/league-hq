@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#020410"/>
+  <text x="2" y="26" font-family="monospace" font-size="16" fill="#3DA3CC" font-weight="bold">BBC</text>
+  <path d="M8 16 C8 8 24 8 24 16 C24 24 8 24 8 16" fill="none" stroke="#E6A33D" stroke-width="2"/> <!-- oval football -->
+  <line x1="16" y1="10" x2="16" y2="20" stroke="#E6A33D" stroke-width="1"/> <!-- vertical lace -->
+  <line x1="14" y1="12" x2="18" y2="12" stroke="#E6A33D" stroke-width="1"/> <!-- cross lace 1 -->
+  <line x1="14" y1="15" x2="18" y2="15" stroke="#E6A33D" stroke-width="1"/> <!-- cross lace 2 -->
+  <line x1="14" y1="18" x2="18" y2="18" stroke="#E6A33D" stroke-width="1"/> <!-- cross lace 3 -->
+</svg>

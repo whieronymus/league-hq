@@ -1,0 +1,18 @@
+<footer class="lhq-footer">
+  <div class="lhq-footer__inner">
+    <div class="lhq-footer__left">
+      <span class="lhq-wordmark--sm">{{ site.meta.short_name }}</span>
+      <span class="lhq-gag">Fantasy operations center</span>
+    </div>
+    <nav aria-label="Footer" class="lhq-footer__nav">
+      {% for link in site.footer.links %}
+        <a href="{{ link.href }}" target="_blank" rel="noopener" class="lhq-footer__link">
+          {{ link.label }}
+        </a>
+      {% endfor %}
+    </nav>
+    <div class="lhq-footer__right">
+      <small class="lhq-smallprint">{{ site.footer.smallprint }}</small>
+    </div>
+  </div>
+</footer>

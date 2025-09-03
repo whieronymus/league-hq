@@ -1,0 +1,21 @@
+---
+layout: layouts/page.njk
+permalink: "/matchups/"
+title: "Matchups"
+---
+<section class="p-6 bg-surface rounded-xl border border-slate-700">
+  <header class="mb-4">
+    <h1 class="text-2xl font-semibold">Matchups</h1>
+    <p class="text-slate-300 text-sm">Week-by-week archive.</p>
+  </header>
+
+  <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {% for w in matchups.weeks | reverse %}
+      <li class="bg-bg rounded-xl border border-slate-700 p-4">
+        <div class="text-sm text-slate-300">Week {{ w.week }}, {{ w.season }}</div>
+        {% if w.date %}<div class="text-xs text-slate-500 mb-2">{{ w.date }}</div>{% endif %}
+        <a class="underline" href="{{ '/matchups/' | url }}{{ w.season }}/week-{{ w.week }}/">View</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

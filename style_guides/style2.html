@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minimalist Retro-Arcade · Style Guide 1.0</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       Tokens and Color System
+       ========================= */
+    :root{
+      /* colors */
+      --bg-primary:#020410;            /* Deep night sky */
+      --bg-surface:#0A0E1A;            /* Surface panels */
+      --text-primary:#DDE6F0;          /* Readable body text */
+      --accent-red:#CC3D5A;            /* Crimson accent */
+      --accent-orange:#E6A33D;         /* Soft orange accent */
+      --accent-cyan:#3DA3CC;           /* Faded neon cyan */
+      --neutral:#2A3140;               /* Borders and dividers */
+      --glow-subtle:rgba(61,163,204,.3); /* Subtle glow */
+
+      /* radius + shadows */
+      --radius-sm:4px;
+      --radius-md:8px;
+      --border-thin:1px;
+      --shadow-glow-sm:0 0 4px var(--glow-subtle);
+      --shadow-glow-md:0 0 8px var(--glow-subtle);
+
+      /* typography */
+      --font-display:"Press Start 2P", monospace;
+      --font-mono-alt:"VT323", monospace;
+      --font-body:"Inter", system-ui, sans-serif;
+
+      /* layout */
+      --page-padding:2rem;
+      --section-gap:3rem;
+    }
+
+    /* =========================
+       Base / Resets
+       ========================= */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg-primary);
+      color:var(--text-primary);
+      font:16px/1.6 var(--font-body);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    img{max-width:100%;display:block}
+    a{color:var(--accent-cyan);text-decoration:none}
+    a:hover{text-decoration:underline}
+    :focus-visible{
+      outline:2px solid var(--accent-cyan);
+      outline-offset:2px;
+    }
+
+    /* =========================
+       Header (sticky)
+       ========================= */
+    .site-header{
+      position:sticky; top:0; z-index:10;
+      background:var(--bg-surface);
+      border-bottom:1px solid var(--accent-cyan);
+      box-shadow:var(--shadow-glow-sm);
+      display:flex; align-items:center; justify-content:center;
+      padding:0.875rem 1rem;
+    }
+    .wordmark{
+      font-family:var(--font-display);
+      text-transform:uppercase;
+      letter-spacing:.05em;
+      font-size:1rem;
+      color:var(--text-primary);
+    }
+
+    /* =========================
+       Layout helpers
+       ========================= */
+    main{padding:var(--page-padding)}
+    section{margin-block:var(--section-gap)}
+    .stack{display:grid; gap:1rem}
+    .grid{display:grid; gap:1rem}
+    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .measure{max-width:75ch}
+    .cluster{display:flex; flex-wrap:wrap; gap:.75rem}
+
+    /* =========================
+       Typography
+       ========================= */
+    h1,h2,h3{
+      margin:0 0 .75rem 0;
+      font-family:var(--font-display);
+      text-transform:uppercase;
+      letter-spacing:.05em;
+    }
+    h1{
+      font-size:2rem;
+      line-height:1.2;
+      background:linear-gradient(90deg,var(--accent-orange),var(--accent-red));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      text-shadow:1px 1px 2px var(--glow-subtle);
+    }
+    h2{
+      font-size:1.5rem;
+      color:var(--accent-cyan);
+      text-shadow:1px 1px 1px var(--glow-subtle);
+    }
+    h3{
+      font-size:1.25rem;
+      color:var(--text-primary);
+    }
+    p{margin:0 0 1rem 0;font-size:1rem}
+
+    code, pre, .label{
+      font-family:var(--font-mono-alt);
+      font-size:1.0625rem;
+    }
+
+    /* =========================
+       Card
+       ========================= */
+    .card{
+      background:var(--bg-surface);
+      border:1px solid var(--neutral);
+      border-radius:var(--radius-sm);
+      padding:1.5rem;
+      box-shadow:var(--shadow-glow-md);
+    }
+    .card h3{
+      font-family:var(--font-display);
+      font-size:1.25rem;
+    }
+
+    /* =========================
+       Buttons
+       ========================= */
+    .btn{
+      font-family:var(--font-display);
+      font-size:.875rem;
+      text-transform:uppercase;
+      padding:.75rem 1.5rem;
+      border:1px solid var(--accent-cyan);
+      border-radius:var(--radius-sm);
+      background:var(--bg-surface);
+      color:var(--text-primary);
+      box-shadow:var(--shadow-glow-sm);
+      cursor:pointer;
+      transition:transform .06s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
+    }
+    .btn:hover{
+      background:var(--accent-cyan);
+      color:var(--bg-primary);
+      box-shadow:var(--shadow-glow-md);
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn.primary{
+      background:var(--accent-red);
+      border:1px solid var(--accent-red);
+      color:#fff;
+    }
+    .btn.primary:hover{
+      background:var(--accent-orange);
+      border-color:var(--accent-orange);
+      color:#020410;
+    }
+
+    /* =========================
+       Palette Swatches
+       ========================= */
+    .swatch{
+      display:grid;
+      grid-template-columns:64px 1fr;
+      gap:1rem;
+      align-items:center;
+      border:1px solid var(--neutral);
+      border-radius:var(--radius-sm);
+      padding:1rem;
+      box-shadow:var(--shadow-glow-md);
+    }
+    .swatch .chip{
+      height:48px; width:64px; border-radius:var(--radius-sm);
+      border:1px solid var(--neutral);
+      box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);
+    }
+    .swatch .meta{
+      display:grid; gap:.25rem;
+    }
+    .swatch .name{
+      font-family:var(--font-mono-alt);
+      font-size:1rem;
+      letter-spacing:.02em;
+    }
+    .row{display:grid; grid-template-columns:1fr auto; gap:.5rem}
+    .tag{
+      padding:.125rem .375rem;
+      border:1px solid var(--neutral);
+      border-radius:var(--radius-sm);
+      font-family:var(--font-mono-alt);
+      font-size:1rem;
+      color:var(--text-primary);
+      align-self:start;
+    }
+
+    /* =========================
+       Code Block
+       ========================= */
+    pre{
+      margin:0;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+      border:1px solid var(--neutral);
+      border-radius:var(--radius-sm);
+      padding:1rem;
+      overflow:auto;
+      box-shadow:var(--shadow-glow-sm);
+    }
+
+    /* =========================
+       Footer
+       ========================= */
+    footer{
+      text-align:center;
+      font-size:.875rem;
+      color:var(--neutral);
+      border-top:1px solid var(--neutral);
+      padding:1rem 0;
+    }
+
+    /* Demo helpers */
+    .demo-surface{background:var(--bg-surface); padding:1rem; border:1px dashed var(--neutral); border-radius:var(--radius-sm)}
+    .divider{height:1px;background:var(--neutral);opacity:.6;margin:1.5rem 0}
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wordmark">Minimalist Retro-Arcade</div>
+  </header>
+
+  <main>
+    <!-- Typography -->
+    <section class="stack">
+      <h1>Typography & Voice</h1>
+      <div class="measure">
+        <h2>Display: Press Start 2P</h2>
+        <p>
+          Use for the wordmark and headings. Uppercase with 0.05em letter-spacing. Subtle neon shadow preserves legibil

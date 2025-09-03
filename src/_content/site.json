@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "name": "Bubonic Chronic",
+    "short_name": "BBC HQ",
+    "tagline": "BBC Operations Center",
+    "season": 2025
+  },
+  "branding": {
+    "favicon_path": "/assets/img/brand/new.png",
+    "wordmark_text": "BUBONIC CHRONIC",
+    "display_font": "Press Start 2P"
+  },
+  "contact": {
+    "email": "commish@example.com",
+    "url": "https://github.com/whieronymus/league-hq",
+    "twitter": "https://x.com/@will_james_17"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Teams", "href": "/teams/" },
+    { "label": "Power Rankings", "href": "/power/" },
+    { "label": "Matchups", "href": "/matchups/" },
+    { "label": "League Rules", "href": "/rules/" }
+  ],
+  "footer": {
+    "smallprint": "© {season} League HQ — All trash talk logged.",
+    "links": [
+      { "label": "Contact", "href": "mailto:whieronymus@gmail.com" },
+      { "label": "Repo", "href": "https://github.com/whieronymus/league-hq" }
+    ]
+  }
+}

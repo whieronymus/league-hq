@@ -1,0 +1,18 @@
+{% macro card(title, classes="") %}
+<div class="rounded-xl bg-[color:var(--surface)]/80 ring-1 ring-white/10 shadow-sm {{ classes }}">
+  {% if title %}
+    <div class="px-4 py-3 border-b border-white/10">
+      <h2 class="text-xl font-semibold tracking-tight">{{ title }}</h2>
+    </div>
+  {% endif %}
+  <div class="p-4">
+    {% if caller %}{{ caller() }}{% endif %}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro badge(text) %}
+<span class="inline-flex items-center rounded-lg border border-white/15 px-2 py-0.5 text-xs tracking-wide">
+  {{ text }}
+</span>
+{% endmacro %}

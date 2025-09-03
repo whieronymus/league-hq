@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ===== BASE: tokens and light element defaults ===== */
+@layer base {
+  :root{
+    --bg:#0b0f15;
+    --surface:#121826;
+    --text:#E6ECF3;
+    --accent:#FF3366;
+    --neon:#30D5FF;
+    --gold:#FFD166;
+    --radius:10px;
+    --lane:24px;
+    --font:system-ui, Inter, ui-sans-serif;
+  }
+
+  *{ box-sizing:border-box; }
+  html, body { height:100%; }
+  html, body {
+    @apply m-0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+  }
+
+  a {
+    color:var(--neon);
+    text-decoration:none;
+    text-underline-offset:2px;
+  }
+  a:hover { text-decoration:underline; }
+  a:focus, :focus-visible {
+    outline:2px solid var(--gold);
+    outline-offset:2px;
+  }
+
+  header, footer { background:var(--surface); }
+
+  /* nav shell; use utilities for layout on elements */
+  nav { border-bottom:1px solid #334155; }
+}
+
+/* ===== COMPONENTS: small, reusable building blocks ===== */
+@layer components {
+  /* Card shell used by rules page */
+  .card {
+    border-radius:var(--radius);
+    background:color-mix(in oklab, var(--surface) 90%, black 10%);
+    box-shadow:0 1px 2px rgb(0 0 0 / .2);
+    outline:1px solid rgb(255 255 255 / .08);
+  }
+  .card-hd { @apply px-4 py-3; border-bottom:1px solid rgb(255 255 255 / .10); }
+  .card-bd { @apply p-4; }
+
+  /* Basic table for future scoring/waivers */
+  .table-basic { width:100%; border-collapse:separate; border-spacing:0; }
+  .table-basic caption { @apply text-left font-semibold mb-2; }
+  .table-basic thead th {
+    @apply text-left font-semibold px-3 py-2;
+    border-bottom:1px solid rgb(255 255 255 / .15);
+  }
+  .table-basic tbody td {
+    @apply align-top px-3 py-2;
+    border-bottom:1px solid rgb(255 255 255 / .08);
+  }
+  .table-basic tbody tr:nth-child(2n) { background:rgb(255 255 255 / .02); }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-lg;
+    border:1px solid rgb(255 255 255 / .15);
+    letter-spacing:.02em;
+  }
+}
+
+/* ===== UTILITIES: tiny helpers not in Tailwind core ===== */
+@layer utilities {
+  /* Retro gridlines overlay: add class to a wrapper */
+  .gridlines::before{
+    content:""; position:fixed; inset:0; pointer-events:none;
+    background:
+      linear-gradient(var(--surface) 1px, transparent 1px) 0 0/100% var(--lane),
+      linear-gradient(90deg, var(--surface) 1px, transparent 1px) 0 0/var(--lane) 100%;
+    opacity:.15;
+  }
+
+  .text-glow{
+    text-shadow:0 0 .4rem color-mix(in oklab, var(--neon) 80%, white 20%);
+  }
+  .shadow-neon{
+    box-shadow:0 0 0 .5px rgb(48 213 255 / .4), 0 0 18px rgb(48 213 255 / .25);
+  }
+  .num { text-align:right; }
+  .skip-link{
+    position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+  }
+  .skip-link:focus{
+    position:static; width:auto; height:auto;
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    .link-smooth { transition:color .15s ease, text-decoration-color .15s ease; }
+  }
+
+  /* Color shorthands that reference tokens */
+  .bg-surface { background:var(--surface); }
+  .text-neon { color:var(--neon); }
+  .ring-white-10 { --tw-ring-color: rgb(255 255 255 / .10); }
+}
+
+/* === Compact top header === */
+.hdr{position:sticky; top:0; z-index:30; background:var(--bg-surface); border-bottom:1px solid #223043}
+.hdr__inner{max-width:72rem; margin-inline:auto; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:.75rem; padding:.75rem 1rem}
+.hdr__brand{font-family:"Press Start 2P",monospace; font-size:1.25rem; letter-spacing:.08em; color:var(--text-primary); text-decoration:none}
+.hdr__brand:hover{color:var(--accent-cyan)}
+.hdr__nav{display:flex; gap:1.25rem; justify-content:center}
+.hdr__link{color:var(--text-primary); text-decoration:none; font-weight:600; letter-spacing:.03em; position:relative; padding:.25rem 0}
+.hdr__link:hover{color:var(--accent-cyan)}
+.hdr__link[aria-current="page"]{color:var(--accent-cyan)}
+.hdr__link[aria-current="page"]::after{content:""; position:absolute; left:0; right:0; bottom:-8px; height:2px; background:var(--accent-cyan); border-radius:2px; box-shadow:0 0 10px var(--glow-subtle)}
+.hdr__right{display:flex; justify-content:flex-end}
+.hdr__badge{font-family:Inter,system-ui; font-size:.7rem; padding:.25rem .5rem; border:1px solid var(--neutral); border-radius:.25rem; opacity:.9}

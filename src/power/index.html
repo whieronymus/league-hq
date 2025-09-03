@@ -1,0 +1,29 @@
+---
+layout: layouts/page.njk
+title: Power Rankings
+---
+<section class="p-6 bg-surface rounded-xl border border-slate-700">
+  <h1 class="text-2xl font-semibold mb-4">Power Rankings</h1>
+
+  {% if power.weeks and power.weeks.length %}
+  <ul class="space-y-3">
+    {% for w in power.weeks | reverse %}
+    <li class="bg-bg rounded-xl border border-slate-700 p-4">
+      <a class="hover:underline" href="{{ '/power/' | url }}{{ w.season }}/week-{{ w.week }}/">
+        Week {{ w.week }}, {{ w.season }}
+      </a>
+      {% if w.entries and w.entries.length %}
+      <div class="mt-2 text-sm text-slate-300">
+        Top:
+        {% for e in w.entries | sort(attribute='rank') | slice(0,3) %}
+          {{ (teams.byId[e.team_id] and teams.byId[e.team_id].name) or e.team_id }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="text-slate-300">No rankings yet.</p>
+  {% endif %}
+</section>

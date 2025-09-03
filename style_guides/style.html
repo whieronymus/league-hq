@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Retro-Arcade Style Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #020410; /* Deep night sky from image background */
+            --bg-surface: #0A0E1A; /* Subtle darker surface for elements */
+            --text-primary: #DDE6F0; /* Muted light gray for readability */
+            --accent-red: #CC3D5A; /* Desaturated crimson from jersey */
+            --accent-orange: #E6A33D; /* Softened orange from brain glow */
+            --accent-cyan: #3DA3CC; /* Faded neon blue from symbols and numbers */
+            --glow-subtle: rgba(61, 163, 204, 0.3); /* Minimal glow for effects */
+            --neutral: #2A3140; /* Mid-tone for borders or accents */
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            font-size: 16px;
+        }
+
+        header {
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--accent-cyan);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Press Start 2P', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            background: linear-gradient(to bottom, var(--accent-orange), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 1px 1px 2px var(--glow-subtle);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-cyan);
+            text-shadow: 1px 1px 1px var(--glow-subtle);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        /* Color Palette */
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .swatch {
+            padding: 1rem;
+            border: 1px solid var(--neutral);
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 0 0 8px var(--glow-subtle);
+        }
+
+        .swatch-label {
+            font-family: 'VT323', monospace;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #fff; /* For contrast on colored swatches */
+        }
+
+        /* Typography */
+        .typography-example {
+            margin-bottom: 1rem;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .btn {
+            font-family: 'Press Start 2P', monospace;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--accent-cyan);
+            border-radius: 4px;
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 4px var(--glow-subtle);
+        }
+
+        .btn:hover {
+            background: var(--accent-cyan);
+            color: var(--bg-primary);
+            box-shadow: 0 0 8px var(--glow-subtle);
+        }
+
+        .btn-primary {
+            background: var(--accent-red);
+            border-color: var(--accent-red);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-orange);
+            border-color: var(--accent-orange);
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-surface);
+            border: 1px solid var(--neutral);
+            border-radius: 4px;
+            padding: 1.5rem;
+            box-shadow: 0 0 8px var(--glow-subtle);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--neutral);
+            padding: 1rem 0;
+            border-top: 1px solid var(--neutral);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minimalist Retro-Arcade Style Guide</h1>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Color Palette</h2>
+            <p>These colors are derived from the image, desaturated for a subtle, minimalist take on 80s arcade vibes.</p>
+            <div class="color-palette">
+                <div class="swatch" style="background: var(--bg-primary);">
+                    <div class="swatch-label">Background Primary #020410</div>
+                </div>
+                <div class="swatch" style="background: var(--bg-surface);">
+                    <div class="swatch-label">Surface #0A0E1A</div>
+                </div>
+                <div class="swatch" style="background: var(--text-primary); color: var(--bg-primary);">
+                    <div class="swatch-label">Text Primary #DDE6F0</div>
+                </div>
+                <div class="swatch" style="background: var(--accent-red);">
+                    <div class="swatch-label">Accent Red #CC3D5A</div>
+                </div>
+                <div class="swatch" style="background: var(--accent-orange);">
+                    <div class="swatch-label">Accent Orange #E6A33D</div>
+                </div>
+                <div class="swatch" style="background: var(--accent-cyan);">
+                    <div class="swatch-label">Accent Cyan #3DA3CC</div>
+                </div>
+                <div class="swatch" style="background: var(--neutral);">
+                    <div class="swatch-label">Neutral #2A3140</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Typography</h2>
+            <p>Headings use 'Press Start 2P' for retro pixel feel; body text uses 'Inter' for clarity. Subtle gradients and shadows add minimal glow.</p>
+            <div class="typography-example">
+                <h1>Heading 1 Example</h1>
+                <p>This is a sample paragraph text. It should feel clean and readable against the dark background.</p>
+            </div>
+            <div class="typography-example">
+                <h2>Heading 2 Example</h2>
+                <p>Another paragraph, perhaps for body content or descriptions.</p>
+            </div>
+            <div class="typography-example">
+                <h3>Heading 3 Example</h3>
+                <p>Smaller text for subtitles or labels.</p>
+            </div>
+            <p class="typography-example" style="font-family: 'VT323', monospace;">Monospace example for codes or labels, like VT323 for extra retro flair.</p>
+        </section>
+
+        <section class="section">
+            <h2>Buttons</h2>
+            <p>Buttons evoke arcade controls with subtle borders and hover glows, using accents from the image.</p>
+            <div class="buttons">
+                <button class="btn">Default Button</button>
+                <button class="btn btn-primary">Primary Button</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Cards & Components</h2>
+            <p>Simple containers with minimal borders and shadows, inspired by the image's layered elements but kept sparse.</p>
+            <div class="card">
+                <h3>Card Title</h3>
+                <p>Content inside a card, such as game info or UI previews.</p>
+            </div>
+            <div class="card">
+                <h3>Another Card</h3>
+                <p>Minimalist layout for reusability.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Style Guide Inspired by Retro-Arcade Vibes – Updated September 2025</p>
+    </footer>
+</body>
+</html>

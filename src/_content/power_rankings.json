@@ -1,0 +1,69 @@
+[
+  {
+    "season": 2025,
+    "week": 1,
+    "date": "2025-09-03",
+    "entries": [
+      {
+        "team_id": "team7",
+        "rank": 1,
+        "blurb": "Every year someone drafts like they found the Infinity Stones. This time it’s December. Allen bombs, Saquon mauls, MHJ glides, and suddenly it’s a polar bear in 49ers gear wrecking your tailgate. If this team loses more than twice, check for sabotage."
+      },
+      {
+        "team_id": "team9",
+        "rank": 2,
+        "blurb": "Fast. Venomous. Annoying to swat at. Spivey put together a roster that’s basically a YouTube highlight reel with CMC, Tyreek, and Jacobs. Rookie QB Maye is the obvious weak link, but who cares when the rest of your lineup can cover for him by halftime?"
+      },
+      {
+        "team_id": "team8",
+        "rank": 3,
+        "blurb": "True to the ‘Norf king’ branding, this team is sturdy and joyless. Burrow and Breece just march forward, Waddle flashes occasionally, and Conner shows up like an uninvited uncle who still eats all your food. It’s not flashy, but you’ll freeze to death playing them."
+      },
+      {
+        "team_id": "team10",
+        "rank": 4,
+        "blurb": "Vince’s eagle doesn’t circle, it dive-bombs. Jefferson, A.J. Brown, and Kelce give this team the aura of a mafia hit. The catch? Rookie QB Jayden Daniels might not yet know where the bodies are buried. Still, every opponent should keep an eye on the sky."
+      },
+      {
+        "team_id": "team3",
+        "rank": 5,
+        "blurb": "Mike drafted like he was swigging rum. Lamar plus JT is already a raid, and then he fired Ja’Marr Chase out of a cannon. Davante Adams is the one-eyed pirate still steering the ship, and Jameson Williams is the powder keg rolling around the deck. Someone’s going overboard."
+      },
+      {
+        "team_id": "team12",
+        "rank": 6,
+        "blurb": "Mahomes, Pollard, Nabers, McBride. This is a tidy, competent squad — which is exactly why it will annoy everyone when it sneaks into the playoffs as the 5 seed and suddenly looks unbeatable. Like William himself, it just quietly insists it was right all along."
+      },
+      {
+        "team_id": "team6",
+        "rank": 7,
+        "blurb": "Blake drafted like a guy who closes deals on speakerphone. Swift, Wilson, Moore — flashy enough for the sizzle reel. George Kittle is the grizzled lawyer who makes sure the paperwork’s filed. Ashton Jeanty is the shady startup you invest in after two drinks."
+      },
+      {
+        "team_id": "team1",
+        "rank": 8,
+        "blurb": "Will’s supposed to be the league’s master strategist. And sure, Dak + CeeDee is efficient, and Higgins + McLaurin look good on the spreadsheet. But the RBs? That’s less ‘calculated genius’ and more ‘student forgot the last page of the exam.’"
+      },
+      {
+        "team_id": "team11",
+        "rank": 9,
+        "blurb": "Nick let his Frenchies call this draft, and apparently the dogs are nostalgic. Henry, Kamara, and Andrews all scream 2019 fantasy dominance. Evans and Olave are still sharp, London could break out, but the QB room is emptier than a dog park at midnight."
+      },
+      {
+        "team_id": "team5",
+        "rank": 10,
+        "blurb": "Lindol has rainbows and trophies on his resume, but this draft looks like he hit auto-pick on accident. Bo Nix at QB1 feels like a prank. Ladd and Sutton are solid, Hockenson’s fine, but the whole build screams ‘ruthless joy’… just not ruthless wins."
+      },
+      {
+        "team_id": "team2",
+        "rank": 11,
+        "blurb": "The chaos king strikes again. Amon-Ra is incredible, Brock Bowers might break the TE position, and then it falls off a cliff into Baker Mayfield country. This team is like a rollercoaster that breaks down every third ride but people still line up for the thrill."
+      },
+      {
+        "team_id": "team4",
+        "rank": 12,
+        "blurb": "Ross is the wild card prophet, and this draft proves he’ll need actual prophecy to compete. Hurts will carry you some weeks like Moses parting seas, but the rest looks like Old Testament smiting. If lightning strikes, Ross will call it destiny — everyone else will call it dumb luck."
+      }
+    ]
+  }
+]

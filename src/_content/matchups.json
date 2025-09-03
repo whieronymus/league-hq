@@ -1,0 +1,15 @@
+[
+  {
+    "season": 2025,
+    "week": 1,
+    "date": "2025-09-07",
+    "matchups": [
+      { "home_team_id": "team1",  "away_team_id": "team2",  "headline": "Brains vs. Brawn",         "blurb": "Spreadsheet kung fu meets vibes-based drafting." },
+      { "home_team_id": "team3",  "away_team_id": "team4",  "headline": "Spiders at The Champ",     "blurb": "Web pressure vs. ring swagger." },
+      { "home_team_id": "team5",  "away_team_id": "team6",  "headline": "Rodger? Roger.",           "blurb": "Flags, skulls, and questionable trades." },
+      { "home_team_id": "team7",  "away_team_id": "team8",  "headline": "December Heat Check",      "blurb": "Title odds go brrr." },
+      { "home_team_id": "team9",  "away_team_id": "team10", "headline": "Speed Merchants",          "blurb": "Tyreek physics vs. clock management." },
+      { "home_team_id": "team11", "away_team_id": "team12", "headline": "Agent vs. Bangbus",        "blurb": "Contract disputes and bus schedules collide." }
+    ]
+  }
+]

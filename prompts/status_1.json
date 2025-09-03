@@ -1,0 +1,163 @@
+{
+  "project": "League HQ — Eleventy static site",
+  "status": {
+    "overall": "bootstrapped",
+    "pages_live": [
+      "/",
+      "/teams/",
+      "/teams/<current_slug>/",
+      "/power/",
+      "/power/<season>/week-<num>/"
+    ],
+    "power_rankings": "implemented; pending visual verify",
+    "assets": "team logos migrated to /assets/img/teams/<team_id>/"
+  },
+  "stack": {
+    "eleventy": "^3.1.2",
+    "tailwind": "v4 (@tailwindcss/cli)",
+    "node": ">=18"
+  },
+  "npm_scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "tailwind:dev": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/site.css --watch",
+    "tailwind:build": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/site.css --minify"
+  },
+  "structure": {
+    "src_dirs": [
+      "src/_includes/layouts",
+      "src/_data",
+      "src/_content",
+      "src/assets/css",
+      "src/assets/js",
+      "src/assets/img/teams/<team_id>/"
+    ]
+  },
+  "config": {
+    "eleventy": {
+      "passthrough": {
+        "src/assets": "assets"
+      },
+      "dir": {
+        "input": "src",
+        "includes": "_includes",
+        "data": "_data",
+        "output": "_site"
+      },
+      "engines": {
+        "html": "njk",
+        "md": "njk"
+      },
+      "watch_content": false
+    },
+    "tailwind_entry_css": "src/assets/css/tailwind.css",
+    "built_css": "src/assets/css/site.css"
+  },
+  "content_models": {
+    "team": {
+      "team_id": "string (stable, e.g. team1..team12)",
+      "current_slug": "string (for URLs)",
+      "slug_history": [
+        "string",
+        "... oldest → newest (include current_slug)"
+      ],
+      "name": "string",
+      "tagline": "string",
+      "claims": [
+        "string"
+      ],
+      "manager": {
+        "name": "string",
+        "username": "string",
+        "user_id": "string",
+        "vibe": "string"
+      },
+      "favorite_team": "string",
+      "least_favorite_team": "string",
+      "logo": {
+        "url": "string",
+        "alt": "string"
+      },
+      "logo_history": [
+        {
+          "url": "string",
+          "alt": "string"
+        }
+      ]
+    },
+    "power_week": {
+      "season": "number",
+      "week": "number",
+      "date": "YYYY-MM-DD",
+      "entries": [
+        {
+          "team_id": "string",
+          "rank": "number",
+          "blurb": "string"
+        }
+      ]
+    }
+  },
+  "data_sources": {
+    "teams": "src/_content/teams.json (12 entries, with histories)",
+    "power_rankings": "src/_content/power_rankings.json (week 1 present)",
+    "matchups": "not added",
+    "rules": "not added"
+  },
+  "data_loaders": {
+    "teams.js": "CommonJS; reads teams.json; exports { all, byId, byCurrentSlug, slugToId }",
+    "power.js": "CommonJS; reads power_rankings.json; exports { weeks, byWeek, latest }",
+    "matchups.js": "not added",
+    "rules.js": "not added"
+  },
+  "templates": {
+    "layout_base": "src/_includes/layouts/base.njk (uses {{ content }})",
+    "home": "src/index.njk",
+    "teams_index": "src/teams/index.njk (team_id for assets, current_slug for URLs)",
+    "team_detail": "src/teams/team.njk (permalink by current_slug)",
+    "power_index": "src/power/index.njk",
+    "power_week": "src/power/week.njk (joins via teams.byId)"
+  },
+  "assets": {
+    "team_logo_path": "/assets/img/teams/<team_id>/logo.png",
+    "picture_sources": false,
+    "js_entry": "src/assets/js/site.js",
+    "migration_script": "scripts/migrate_team_images.py (--apply)"
+  },
+  "decisions": {
+    "identity": "Stable team_id everywhere; current_slug only for URLs",
+    "redirects_future": "slug_history reserved for potential redirects",
+    "images": "local repo assets; AVIF/WEBP later",
+    "style": "Tailwind v4 utilities",
+    "a11y": "semantic layout; visible focus"
+  },
+  "teams_ids": [
+    "team1",
+    "team2",
+    "team3",
+    "team4",
+    "team5",
+    "team6",
+    "team7",
+    "team8",
+    "team9",
+    "team10",
+    "team11",
+    "team12"
+  ],
+  "change_policy": {
+    "proposal_first": true,
+    "workflow": [
+      "propose diff",
+      "await approval",
+      "apply full updated file"
+    ],
+    "scope_control": "one or two steps at a time"
+  },
+  "next_steps": [
+    "Visual QA /power/ and week pages.",
+    "Add rules.json + loader + page.",
+    "Add matchups.json + loader + pages.",
+    "Optional: add redirects using slug_history if hosting supports it."
+  ]
+}

@@ -1,0 +1,25 @@
+---
+layout: layouts/page.njk
+title: Teams
+---
+<section class="p-6 bg-surface rounded-xl border border-slate-700">
+  <h1 class="text-2xl font-semibold mb-4">Teams</h1>
+
+  {% if teams and teams.all and teams.all.length %}
+  <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {% for t in teams.all %}
+    <li class="bg-bg rounded-xl border border-slate-700 overflow-hidden">
+      <a class="flex items-center gap-4 p-4 hover:bg-slate-800 transition" href="{{ '/teams/' | url }}{{ t.current_slug }}/">
+        <img src="{{ '/assets/img/teams/' | url }}{{ t.team_id }}/logo.png" alt="{{ t.logo.alt or (t.name + ' logo') }}" class="w-14 h-14 object-cover rounded-lg">
+        <div>
+          <div class="text-lg font-medium">{{ t.name }}</div>
+          <div class="text-sm text-slate-300">{{ t.tagline }}</div>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="text-slate-300">No teams yet.</p>
+  {% endif %}
+</section>

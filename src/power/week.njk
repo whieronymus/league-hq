@@ -1,0 +1,34 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: power.weeks
+  size: 1
+  alias: pw
+permalink: "/power/{{ pw.season }}/week-{{ pw.week }}/"
+eleventyComputed:
+  title: "Power Rankings — Week {{ pw.week }}, {{ pw.season }}"
+---
+<section class="p-6 bg-surface rounded-xl border border-slate-700">
+  <header class="mb-4">
+    <h1 class="text-2xl font-semibold">Week {{ pw.week }}, {{ pw.season }}</h1>
+    {% if pw.date %}<p class="text-slate-300 text-sm">{{ pw.date }}</p>{% endif %}
+  </header>
+
+  <ol class="space-y-3">
+    {% for e in pw.entries | sort(attribute='rank') %}
+    {% set t = teams.byId[e.team_id] %}
+    <li class="bg-bg rounded-xl border border-slate-700 p-4 flex items-center gap-4">
+      <div class="text-2xl font-bold w-10 text-center">{{ e.rank }}</div>
+      <img src="{{ '/assets/img/teams/' | url }}{{ t.team_id }}/logo.png" alt="{{ t.logo.alt or (t.name + ' logo') }}" class="w-12 h-12 object-cover rounded-lg">
+      <div>
+        <div class="font-medium">{{ t.name }}</div>
+        <div class="text-sm text-slate-300">{{ e.blurb }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <p class="mt-6">
+    <a class="underline" href="{{ '/power/' | url }}">All weeks</a>
+  </p>
+</section>
